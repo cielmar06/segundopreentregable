@@ -21,19 +21,21 @@
             <div class="input-group ">
                 <div class="input-field" id="nameInput">
                     <i  class="fa-solid fa-user" ></i>
-                    <input type="text" placeholder="Nombre">
+                    <input type="text" id="nombre" placeholder="Nombre">
                 </div> 
                 <div class="input-field" id="lastnameInput">
                     <i class="fa-sharp fa-regular fa-user"></i>
-                <input type="text" placeholder="Apellido">
 
+                <input type="text" id="apellido" placeholder="Apellido" >
                 </div> 
                     <div class="input-field" >
                         <i class="fa-solid fa-envelope"></i>
-                    <input type="email" placeholder="Correo">
+
+                    <input type="email"  id="email"  placeholder="Correo">
                     </div> 
-                  <div class="input-field">
+                  <div class="input-field" id="password">
                    <i class="fa-solid fa-lock"></i>
+
                   <input type="password" placeholder="Contraseña">
                   </div> 
                   <p>Olvido su contraseña <a href="#" style="text-decoration: none;"> click aqui </a></p>
@@ -41,7 +43,12 @@
             <div class="btn-field">
                 <button id="signUp" type="button"> Registro </button>
                 <button id="signIn" type="button" class="disable"> Iniciar sesión</button>
+               
             </div>
+           
+                <button onclick="guardarInformacion()" class="boton" type="button" onclick="guardar()">Guardar</button>
+            
+          
         </form>
     </div>
 </div>

@@ -22,3 +22,40 @@ signUp.onclick = function (){
     signIn.classList.add("disable");
 
 }
+    
+function guardarInformacion(){
+    let nombre = document.getElementById('nombre').value
+    let apellido=document.getElementById('apellido').value
+    let email=document.getElementById("email").value
+
+    if(nombre==""){
+        alert ("Campo obligatorio")
+        document.getElementById("nombre")
+    } else{ 
+        if(apellido==""){ 
+            alert ("Campo obligatorio")
+            document.getElementById("apellido")
+        }else{  console.log( nombre+""+ apellido)
+    
+        }
+        }
+
+    let usuario= {
+        nombre: nombre,
+        apellido: apellido,
+        email: email, 
+    };
+  let usuarioJSON = JSON.stringify(usuario);
+  console.log(usuarioJSON);
+
+
+}
+DatosDueñaMDeModa =[{
+   nombreC: "CIELMAR CHAVEZ",
+   DNI:96024016,
+
+}
+]
+
+localStorage.setItem("DatosDueña", JSON.stringify(DatosDueñaMDeModa))
+

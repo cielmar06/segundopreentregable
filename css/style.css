@@ -96,7 +96,8 @@ a{
         border: 0;
         outline: 0;
         cursor: pointer;
-        transition: background 1s;
+        transition: background 1s; 
+        
         
 
     }
@@ -113,3 +114,12 @@ a{
 .input-group{
     height: 360px;
 }
+.boton{ font-size: 16px;
+color: #FF64AA;
+background-color: white;
+transition: background 1s;
+height: 40px;
+width: 100%;
+margin: 20px;
+cursor: pointer;}
+
